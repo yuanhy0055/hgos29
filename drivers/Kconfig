@@ -1,0 +1,64 @@
+# drivers/Kconfig
+
+menu "Device Drivers"
+
+source "drivers/base/Kconfig"
+
+source "drivers/connector/Kconfig"
+
+source "drivers/of/Kconfig"
+
+source "drivers/pnp/Kconfig"
+
+source "drivers/block/Kconfig"
+
+# misc before ide - BLK_DEV_SGIIOC4 depends on SGI_IOC4
+
+source "drivers/misc/Kconfig"
+
+source "drivers/scsi/Kconfig"
+
+source "drivers/message/fusion/Kconfig"
+
+source "drivers/message/i2o/Kconfig"
+
+source "drivers/net/Kconfig"
+
+# input before char - char/joystick depends on it. As does USB.
+
+source "drivers/input/Kconfig"
+
+source "drivers/char/Kconfig"
+
+source "drivers/power/Kconfig"
+
+source "drivers/hwmon/Kconfig"
+
+source "drivers/thermal/Kconfig"
+
+source "drivers/watchdog/Kconfig"
+
+source "drivers/regulator/Kconfig"
+
+source "drivers/video/Kconfig"
+
+source "drivers/usb/Kconfig"
+
+source "drivers/leds/Kconfig"
+
+source "drivers/accessibility/Kconfig"
+
+source "drivers/edac/Kconfig"
+
+source "drivers/rtc/Kconfig"
+
+source "drivers/dma/Kconfig"
+
+source "drivers/dca/Kconfig"
+
+source "drivers/auxdisplay/Kconfig"
+
+source "drivers/uio/Kconfig"
+
+source "drivers/platform/Kconfig"
+endmenu
